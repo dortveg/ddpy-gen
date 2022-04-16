@@ -1,0 +1,284 @@
+
+@font-face {
+  font-family: 'Bebas';
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: 'Elite';
+  src: url(../fonts/SpecialElite-Regular.ttf);
+}
+/* @-webkit-keyframes pop-in {
+  0% { opacity: 0; -webkit-transform: scale(0.5); }
+  100% { opacity: 1; -webkit-transform: scale(1); }
+}
+@-moz-keyframes pop-in {
+  0% { opacity: 0; -moz-transform: scale(0.5); }
+  100% { opacity: 1; -moz-transform: scale(1); }
+} */
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.pop {
+  /* -webkit-animation:pop-in 0.5s;
+  -moz-animation:pop-in 0.5s;
+  -ms-animation:pop-in 0.5s; */
+  animation: pop-in 0.5s;
+}
+
+html {
+  height: 100%;
+  background-color: #141313;
+}
+
+body {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  display: inline;
+  height: 5em;
+  margin-left: -8px;
+}
+
+nav {
+  width: 20vw;
+  position: absolute;
+  right: 100%;
+  padding: 1em;
+  margin-top: 24vh;
+  background-color: #414141;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-right: solid #3b89ff;
+
+  transform: translateX(1.5em);
+  transition: 0.2s transform;
+}
+
+nav:hover,
+nav:focus-within {
+  transform: translateX(100%);
+}
+
+.check {
+  margin-left: 1em;
+  width: .7vw;
+  height: .7vw;
+}
+
+.dfont {
+  color: #262628;
+}
+
+.dbutton {
+  color: #e2eaf1;
+  background-color: #262628;
+}
+
+.dbg {
+  background-color: #e2eaf1;
+}
+
+.main {
+  text-align: center;
+  margin-top: 7vh;
+}
+
+h1 {
+  font-size: 4vw;
+  color: #3b89ff;
+  font-family: 'Elite';
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 3vw;
+  color: #e2eaf1;
+  font-family: 'Bebas';
+  letter-spacing: 1px;
+}
+
+img {
+  border-radius: 5px;
+  margin-bottom: 3%;
+  max-width: 40%;
+}
+
+.workTime {
+  font-family: 'Bebas';
+}
+
+button {
+  width: 8%;
+  color: #141313;
+  background: #e2eaf1;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Bebas';
+  font-size: .85vw;
+  letter-spacing: 1px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2.5%;
+  margin-bottom: 1.3%;
+  padding-top: 1%;
+  padding-bottom: .9%
+}
+
+button:hover {
+  background: #66a0d3;
+}
+
+span {
+  color: #e2eaf1;
+}
+
+hr {
+  border: none;
+  margin: .4rem 0;
+}
+
+.ehr {
+  margin: 0;
+}
+
+.disabled {
+  background-color: #414141;
+  color: grey;
+  cursor: default;
+  pointer-events: none;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+.warning {
+  color: #5e2424;
+}
+
+.generator {
+  text-align: center;
+}
+
+.label {
+  font-size: 1.6vw;
+}
+
+.timer {
+  margin-left: 1%;
+  font-size: 2vw;
+}
+
+.options {
+  font-family: 'Bebas';
+  padding-bottom: 1.5em;
+  font-size: .8vw;
+  letter-spacing: 1px;
+}
+
+.options a {
+  color: #936868;
+  margin: 0 .5rem;
+  text-decoration: none;
+}
+
+.option .selected {
+  color: #3b89ff;
+  font-weight: bold;
+}
+
+.about {
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+  margin-bottom: 1vh;
+  margin-top: 4%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .9vw;
+  color: #9e9e9e;
+  font-family: 'Elite';
+  line-height: 1.2;
+}
+
+.copyright {
+  margin-top: 7vh;
+  font-size: .8vw;
+}
+
+.link:link, .link:visited {
+  color: #353232;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+@media (orientation: portrait) {
+  .main {
+    margin-top: 10vh;
+  }
+
+  #theme {
+    width: 1.1vh;
+    height: 1.1vh;
+  }
+  
+  h1 {
+    font-size: 5.4vh;
+  }
+  
+  h2 {
+    font-size: 4.2vh;
+  }
+
+  img {
+    margin-bottom: 5%;
+    max-width: 70%;
+  }
+
+  .options {
+    font-size: 1.3vh;
+    width: 35vh;
+  }
+
+  .label {
+    font-size: 2vh;
+  }
+  
+  .timer {
+    font-size: 2.5vh;
+  }
+
+  button {
+    font-size: 1.3vh;
+    margin-top: 3.5%;
+    width: 22%;
+    padding-top: 2%;
+    padding-bottom: 1.9%;
+  }
+
+  p {
+    font-size: 1.4vh;
+  }
+  
+  .copyright {
+    font-size: 1.2vh;
+  }
+}

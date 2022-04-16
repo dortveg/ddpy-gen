@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>DDPY-GT</title>
+</head>
+<body>
+
+  <div class="container">
+    <nav class="options pulsing" tabindex="0">
+      <span class="option durations">Duration: 
+        <a id="twenty" href="javascript:void(0)">20m</a>
+        <a id="thirty" class="selected" href="javascript:void(0)">30m</a>
+        <a id="forty" href="javascript:void(0)">40m</a>
+        <a id="fifty" href="javascript:void(0)">50m</a>
+        <a id="sixty" href="javascript:void(0)">60m</a>
+        <a id="inf" style="font-size: 150%;" href="javascript:void(0)">&infin;</a>
+      </span>
+      <hr>
+      <span class="option speeds">Exercise Speed: 
+        <a id="slow" style="margin-left: .5rem;" href="javascript:void(0)">Slower</a>
+        <a id="reg" class="selected" style="margin-left: 1rem;" href="javascript:void(0)">Regular</a>
+        <a id="fast" style="margin-left: 1rem;" href="javascript:void(0)">Faster</a>
+      </span>
+      <hr>
+      <span class="option">Light Mode:
+        <input id="theme" type="checkbox" class="check">
+      </span>
+      <hr>
+      <span class="option">Exercises:
+        <hr>
+        <input class="check" type="checkbox" id="ignition" name="a" checked>
+        <label for="a">Ignition</label>
+        <input class="check" type="checkbox" id="diamondcutter" name="b" checked>
+        <label for="b">Diamond Cutter</label>
+        <hr class="ehr">
+        <input class="check" type="checkbox" id="bar" name="c" checked>
+        <label for="c">Bar-Back</label>
+        <input class="check" type="checkbox" id="catcher" name="d" checked>
+        <label for="d">Catcher</label>
+        <hr class="ehr">
+        <input class="check" type="checkbox" id="pushups" name="e" checked>
+        <label for="e">Pushups</label>
+        <input class="check" type="checkbox" id="plank" name="f" checked>
+        <label for="f">Plank</label>
+        <hr class="ehr">
+        <input class="check" type="checkbox" id="cobra" name="g" checked>
+        <label for="g">Cobra</label>
+        <input class="check" type="checkbox" id="table" name="h" checked>
+        <label for="h">Table</label>
+        <hr class="ehr">
+        <input class="check" type="checkbox" id="brokentable" name="i" checked>
+        <label for="i">Broken Table</label>
+        <input class="check" type="checkbox" id="lunge" name="j" checked>
+        <label for="j">Lunge</label>
+        <hr class="ehr">
+        <input class="check" type="checkbox" id="warrior" name="k" checked>
+        <label for="k">Warrior</label>
+        <input class="check" type="checkbox" id="dynamic" name="l" checked>
+        <label for="l">Dynamic Resistance</label>
+        <hr class="ehr">
+        <input class="check" type="checkbox" id="abs" name="m" checked>
+        <label for="m">Abs/Core</label>
+        <input class="check" type="checkbox" id="knees" name="n" checked>
+        <label for="n">Knee Kicks</label>
+      </span>
+    </nav>
+  </div>
+
+  <div class="main">
+    <h2>Countdown To Next Exercise</h2>
+    <h1 class="count">XX</h1>
+    <h1 class="exercise">----</h1>
+    <img class="image" src="./src/pics/diamondCutter.jpg" alt="workout picture">
+    <br>
+    <span class="workTime label">Workout Time:</span><span class="workTime timer">30:00</span>
+    <br>
+    <button class="start">Start Workout</button>
+    <button class="stop disabled" disabled>Stop Workout</button>
+  </div>
+
+  <div class="about">
+    <p class="info">A DDPYoga workout generator, mostly using the Diamond Dozen. Use the menu on the left to customize your workout and hulk it out!</p>
+    <p class="copyright"><a class="link" href="mailto:dortveg@dismail.de">Email </a>< ©2022 GT ><a class="link" href="https://github.com/dortveg"> GitHub</a></p>
+  </div>
+  
+</body>
+<script src="src/app.js"></script>
+</html>
+
+<!--<hr class="ihr">
+    <span class="option difficulties">Exercise Difficulty: 
+      <a id="easy" class="selected" style="margin-left: .5rem;" href="javascript:void(0)">Easy</a>
+      <a id="med" style="margin-left: 1rem;" href="javascript:void(0)">Intermediate</a>
+      <a id="hard" style="margin-left: .5rem;" href="javascript:void(0)">Hard</a>
+    </span> -->
